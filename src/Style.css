@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  letter-spacing: 0px;
+  text-transform: none !important;
+}
+:root {
+  --header-background: #f7f7f7;
+  --heading-text-color: #10242b;
+  --expansion-panel-background: #1ebbd9;
+  --expansion-panel-text: #ffffff;
+  --input-label: #4c4c4c;
+  --btn-color: #d1121b;
+}
+
+/* ---------------------HEADER CSS--------------------- */
+.header {
+  background-color: var(--header-background);
+}
+.claim-no {
+  color: var(--heading-text-color);
+  font-size: 16px;
+}
+.claim {
+  color: #d1121b;
+  font-size: 16px;
+}
+.view-details {
+  color: #23b1a9;
+  font-size: 12px;
+}
+
+/* ----------------------TABS CSS------------------------- */
+#tab-one {
+  color: #ffffff;
+  background-color: #1ebbd9;
+  border: 1px solid #b5c1c4;
+  font-size: 16px;
+  height: 45px;
+  width: 149px;
+}
+#tab-two {
+  color: #111;
+  font-size: 16px;
+  border: 1px solid #b5c1c4;
+  height: 45px;
+  width: 149px;
+  background-color: #ffffff;
+}
+
+/* ------------------HEADING CSS-------------------- */
+.heading {
+  color: var(--heading-text-color);
+  size: 18px;
+  height: 22px;
+}
+
+/* ----------------EXPANSION PANEL -------------------- */
+.expansion-panel-container {
+  margin-top: 10px;
+  border: 1px solid #b5c1c4;
+}
+.expansion-panel-header {
+  display: flex;
+  align-items: center;
+  background-color: var(--expansion-panel-background);
+  color: var(--expansion-panel-text);
+  height: 36px;
+  padding: 20px;
+}
+.heading-item-one {
+  color: #ffffff;
+  font-size: 14px;
+}
+.heading-item-two {
+  height: 18px;
+  width: 18px;
+}
+
+/* ---------------------INPUT-LABEL-------------- */
+.textfield-main {
+  color: var(--input-label);
+  font-size: 13px;
+  height: 13px;
+  width: 117px;
+}
+.input {
+  border-radius: 0px !important;
+}
+.form-group {
+  width: 200px;
+}
+.mandatory {
+  color: #d1121b;
+}
+
+/* --------------------BUTTONS-CSS------------------------ */
+.btn {
+  color: var(--btn-color);
+  box-shadow: 0px 2px 2px #d1121b3d;
+  border: 1px solid #d1121b;
+  border-radius: 4px;
+}
+.submit-btn {
+  color: #23b1a9;
+  box-shadow: 0px 3px 4px #23b1a93d;
+  border-radius: 4px;
+}
+.add-assessment-btn {
+  color: #1ebbd9;
+  box-shadow: 0px 3px 4px #1ebbd93d;
+  border-radius: 4px;
+  width: 176px;
+  height: 35px;
+}
+
+/* -------------------LINK-TAG-CSS---------------------- */
+a {
+  text-decoration: none;
+}

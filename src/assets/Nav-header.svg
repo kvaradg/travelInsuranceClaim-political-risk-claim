@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1372" height="62" viewBox="0 0 1372 62">
+  <defs>
+    <filter id="Rectangle_2348" x="0" y="0" width="1372" height="62" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Nav-header" transform="translate(3 1)">
+    <g id="Group_7897" data-name="Group 7897">
+      <g transform="matrix(1, 0, 0, 1, -3, -1)" filter="url(#Rectangle_2348)">
+        <rect id="Rectangle_2348-2" data-name="Rectangle 2348" width="1366" height="56" transform="translate(3 1)" fill="#10242b"/>
+      </g>
+      <path id="Path_8404" data-name="Path 8404" d="M18,16V11c0-3.07-1.64-5.64-4.5-6.32V4a1.5,1.5,0,0,0-3,0v.68C7.63,5.36,6,7.92,6,11v5L4,18v1H20V18Zm-6,6a2.006,2.006,0,0,0,2-2H10A2,2,0,0,0,12,22Z" transform="translate(1252 15.5)" fill="#fff" opacity="0"/>
+      <path id="Path_8405" data-name="Path 8405" d="M12,12A4,4,0,1,0,8,8,4,4,0,0,0,12,12Zm0,2c-2.67,0-8,1.34-8,4v2H20V18C20,15.34,14.67,14,12,14Z" transform="translate(1306 16)" fill="#fff" opacity="0"/>
+      <g id="LOB" transform="translate(1194 16)" opacity="0">
+        <path id="Path_1966" data-name="Path 1966" d="M4,8H8V4H4Zm6,12h4V16H10ZM4,20H8V16H4Zm0-6H8V10H4Zm6,0h4V10H10ZM16,4V8h4V4ZM10,8h4V4H10Zm6,6h4V10H16Zm0,6h4V16H16Z" fill="#fff"/>
+        <path id="Path_1967" data-name="Path 1967" d="M0,0H24V24H0Z" fill="none"/>
+      </g>
+      <g id="Travel-quick-nav" transform="translate(937 16)">
+        <g id="Group_11897" data-name="Group 11897" transform="translate(-979 -84)">
+          <text id="View_Upload_Documents" data-name="View/Upload Documents" transform="translate(1133 102)" fill="#fff" font-size="14" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">View/Upload Documents</tspan></text>
+          <g id="outline-description-24px" transform="translate(1105 84)">
+            <g id="Bounding_Boxes">
+              <path id="Path_2324" data-name="Path 2324" d="M0,0H24V24H0Z" fill="none"/>
+            </g>
+            <g id="Outline">
+              <g id="Group_47" data-name="Group 47">
+                <rect id="Rectangle_27" data-name="Rectangle 27" width="8" height="2" transform="translate(8 16)" fill="#23b1a9"/>
+                <rect id="Rectangle_28" data-name="Rectangle 28" width="8" height="2" transform="translate(8 12)" fill="#23b1a9"/>
+                <path id="Path_2325" data-name="Path 2325" d="M14,2H6A2.006,2.006,0,0,0,4,4V20a2,2,0,0,0,1.99,2H18a2.006,2.006,0,0,0,2-2V8Zm4,18H6V4h7V9h5Z" fill="#23b1a9"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="claim-Quick-Nav-quick-menu" transform="translate(0 1)">
+          <g id="Group_11794" data-name="Group 11794" transform="translate(-1116 -83)">
+            <rect id="Rectangle_2882" data-name="Rectangle 2882" width="24" height="24" transform="translate(1116 83)" fill="none"/>
+            <path id="Path_9500" data-name="Path 9500" d="M6.06,5.968.984,11.558h5.2l-.077.468c-.171,1.047-.957,8.355-.916,8.523.024.1,2.317-2.32,5.1-5.377l5.051-5.558-2.564-.039-2.563-.039.068-.393c.149-.861.944-8.423.9-8.589C11.156.457,8.852,2.893,6.06,5.968Z" transform="translate(1120.016 84.448)" fill="#23b1a9" fill-rule="evenodd"/>
+          </g>
+          <text id="Quick_Menu" data-name="Quick Menu" transform="translate(28 17)" fill="#fff" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Quick Menu</tspan></text>
+        </g>
+        <g id="Travel-Claim-Menu" transform="translate(333 1)">
+          <g id="baseline-more_vert-24px">
+            <path id="Path_2016" data-name="Path 2016" d="M0,0H24V24H0Z" fill="none"/>
+            <path id="Path_2017" data-name="Path 2017" d="M12,8a2,2,0,1,0-2-2A2.006,2.006,0,0,0,12,8Zm0,2a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,10Zm0,6a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,16Z" fill="#23b1a9"/>
+          </g>
+          <text id="Menu" transform="translate(28 18)" fill="#fff" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Menu</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g id="Group_10441" data-name="Group 10441" transform="translate(16 16)">
+      <path id="Path_9240" data-name="Path 9240" d="M25,12.5A12.5,12.5,0,1,1,12.5,0,12.5,12.5,0,0,1,25,12.5Zm-7.031.781a.781.781,0,0,0,0-1.562H8.917l3.355-3.353a.782.782,0,0,0-1.106-1.106L6.478,11.947a.781.781,0,0,0,0,1.106l4.688,4.688a.782.782,0,0,0,1.106-1.106L8.917,13.281Z" fill="#23b1a9" fill-rule="evenodd"/>
+    </g>
+    <g id="Component_40_2" data-name="Component 40 – 2" transform="translate(65 16)">
+      <text id="Claim_Processing" data-name="Claim Processing" transform="translate(0 19)" fill="#fff" font-size="18" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Claim Processing</tspan></text>
+      <path id="Polygon_18" data-name="Polygon 18" d="M4.5,0,9,5H0Z" transform="translate(290 15) rotate(180)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
