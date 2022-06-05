@@ -210,22 +210,46 @@
             <!-- -----------------------------ROW -2 -------------------------- -->
             <v-layout wrap class="mx-1 form-group-container">
               <v-flex class="form-group mx-2">
-                <label class="form-label">
-                  <b class="textfield-main">FIR Date</b
+                <label class="form-label"
+                  ><b class="textfield-main">FIR Date</b
                   ><span class="mandatory">*</span>
                 </label>
-                <v-text-field
-                  class="input"
-                  placeholder="Enter..."
-                  solo
-                  dense
-                  outlined
-                  prepend-inner-icon="mdi-calendar"
+                <v-menu
+                  ref="menu"
+                  v-model="menu"
+                  :close-on-content-click="false"
+                  :return-value.sync="date"
+                  transition="scale-transition"
+                  offset-y
+                  min-width="auto"
                 >
-                  <template v-slot:prepend-inner>
-                    <v-icon class="iconstyle"> mdi-calendar </v-icon>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-text-field
+                      v-model="date"
+                      placeholder="DD/MM/YYYY"
+                      class="form-control rounded-0"
+                      readonly
+                      v-bind="attrs"
+                      v-on="on"
+                      solo
+                      dense
+                      outlined
+                    >
+                      <template v-slot:prepend-inner>
+                        <v-icon class="iconstyle"> mdi-calendar </v-icon>
+                      </template>
+                    </v-text-field>
                   </template>
-                </v-text-field>
+                  <v-date-picker v-model="date" no-title scrollable>
+                    <v-spacer></v-spacer>
+                    <v-btn text color="primary" @click="menu = false">
+                      Cancel
+                    </v-btn>
+                    <v-btn text color="primary" @click="$refs.menu.save(date)">
+                      OK
+                    </v-btn>
+                  </v-date-picker>
+                </v-menu>
               </v-flex>
 
               <v-flex class="form-group mx-2">
@@ -453,6 +477,7 @@ export default {
     return {
       toggle1: false,
       toggle2: false,
+      menu: false,
     };
   },
 };
@@ -494,5 +519,9 @@ export default {
   height: 40px;
   background-color: gray;
   width: 34px;
+}
+.date-label {
+  font-size: 13px;
+  color: #4c4c4c;
 }
 </style>

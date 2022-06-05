@@ -114,23 +114,48 @@
               </v-flex>
 
               <v-flex class="form-group mx-2">
-                <label class="form-label">
-                  <b class="textfield-main">Rate Of Exchange Date</b
+                <label class="form-label"
+                  ><b class="textfield-main">Rate Of Exchange Date</b
                   ><span class="mandatory">*</span>
                 </label>
-                <v-text-field
-                  class="input"
-                  label="Enter..."
-                  disabled
-                  solo
-                  dense
-                  outlined
+                <v-menu
+                  ref="menu"
+                  v-model="menu"
+                  :close-on-content-click="false"
+                  :return-value.sync="date"
+                  transition="scale-transition"
+                  offset-y
+                  min-width="auto"
                 >
-                  <template v-slot:prepend-inner>
-                    <v-icon class="iconstyle">mdi-calendar</v-icon>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-text-field
+                      v-model="date"
+                      placeholder="DD/MM/YYYY"
+                      class="form-control rounded-0"
+                      readonly
+                      v-bind="attrs"
+                      v-on="on"
+                      solo
+                      dense
+                      outlined
+                    >
+                      <template v-slot:prepend-inner>
+                        <v-icon class="iconstyle"> mdi-calendar </v-icon>
+                      </template>
+                    </v-text-field>
                   </template>
-                </v-text-field>
+                  <v-date-picker v-model="date" no-title scrollable>
+                    <v-spacer></v-spacer>
+                    <v-btn text color="primary" @click="menu = false">
+                      Cancel
+                    </v-btn>
+                    <v-btn text color="primary" @click="$refs.menu.save(date)">
+                      OK
+                    </v-btn>
+                  </v-date-picker>
+                </v-menu>
               </v-flex>
+
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">ROE Updated Manually</b
