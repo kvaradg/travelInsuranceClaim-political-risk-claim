@@ -8,7 +8,7 @@
         <v-divider vertical class="my-2"></v-divider>
         <p class="font-weight-bold mt-3 mx-5 claim">FEATURE CLAIM</p>
         <v-spacer></v-spacer>
-        <p class="text-caption mt-3 mr-5 view-details"><b>View Details</b></p>
+        <p class="text-caption mt-3 mr-5 view-details"><b>VIEW DETAILS</b></p>
       </div>
       <div class="mt-3">
         <router-link to="/">
