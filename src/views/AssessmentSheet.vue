@@ -6,7 +6,7 @@
           Claim Number - 4340002739
         </p>
         <v-divider vertical class="my-2"></v-divider>
-        <p class="red--text font-weight-bold mt-3 mx-5 claim">FEATURE CLAIM</p>
+        <p class="font-weight-bold mt-3 mx-5 claim">FEATURE CLAIM</p>
         <v-spacer></v-spacer>
         <p class="text-caption mt-3 mr-5 view-details"><b>View Details</b></p>
       </div>

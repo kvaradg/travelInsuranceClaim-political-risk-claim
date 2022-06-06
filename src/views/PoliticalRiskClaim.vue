@@ -390,7 +390,7 @@
                   outlined
                 >
                   <template v-slot:prepend-inner>
-                    <v-icon class="iconstyle">mdi-email-outline</v-icon>
+                    <v-icon class="iconstyle">mdi-email</v-icon>
                   </template>
                 </v-text-field>
                 <v-divder></v-divder>
@@ -451,14 +451,14 @@
             ><v-divider vertical class="red mx-2"></v-divider>Reset</v-btn
           >
 
-          <v-btn class="red--text btn" flat
+          <v-btn class="red--text btn" flat 
             ><v-icon>mdi-backspace-outline</v-icon
             ><v-divider vertical class="red mx-2"></v-divider>Cancel</v-btn
           >
 
           <v-spacer></v-spacer>
 
-          <v-btn class="white--text submit-btn" color="#23b1a9"
+          <v-btn class="white--text submit-btn" color="#23B1A9"
             ><v-icon>mdi-arrow-right-circle-outline</v-icon
             ><v-divider vertical class="white mx-2 vr-divider"></v-divider>
             Submit</v-btn
@@ -509,16 +509,6 @@ export default {
   height: 40px;
   width: 40px;
   margin-left: -12px;
-}
-.mdi-email::before {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 435px;
-  border-right: 1px solid gray;
-  height: 40px;
-  background-color: gray;
-  width: 34px;
 }
 .date-label {
   font-size: 13px;
