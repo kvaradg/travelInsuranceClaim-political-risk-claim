@@ -302,7 +302,7 @@
                   label="1000"
                   outlined
                   dense
-                  class="mt-2 table-input"
+                  class="mt-3 rounded-0"
                   disabled
                 ></v-text-field
                 >{{ item.text }}
@@ -312,7 +312,7 @@
                   label="1000"
                   outlined
                   dense
-                  class="mt-2"
+                  class="mt-3 rounded-0"
                   disabled
                   style="align-text: center"
                 ></v-text-field
@@ -323,7 +323,7 @@
                   label="Enter..."
                   outlined
                   dense
-                  class="mt-2"
+                  class="mt-3 rounded-0"
                   style="align-text: center"
                 ></v-text-field
                 >{{ item.text }}
@@ -333,7 +333,7 @@
                   label="1000"
                   outlined
                   dense
-                  class="mt-2"
+                  class="mt-3 rounded-0"
                   disabled
                   style="align-text: center"
                 ></v-text-field
@@ -412,9 +412,9 @@ export default {
   components: {},
   data() {
     return {
-      toggle1: false,
-      toggle2: false,
-      toggle3: false,
+      toggle1: true,
+      toggle2: true,
+      toggle3: true,
 
       headers: [
         {

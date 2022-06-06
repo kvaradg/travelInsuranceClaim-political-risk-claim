@@ -17,7 +17,7 @@
           ></router-link
         >
         <v-btn class="pa-5 ml-1" id="tab-one"><b>Assessment Sheet</b></v-btn>
-        <v-divider class="mr-16"></v-divider>
+        <v-divider></v-divider>
       </div>
     </div>
     <div class="mt-16">

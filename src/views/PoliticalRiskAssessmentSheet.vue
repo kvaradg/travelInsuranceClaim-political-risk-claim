@@ -17,12 +17,16 @@
           Claim Details</v-btn
         >
       </router-link>
+
+      
       <v-btn class="pa-5" id="tab-two" elevation="0">Assessment Sheet</v-btn>
-      <v-divider class="mr-16"></v-divider>
+      <v-divider></v-divider>
     </div>
 
     <div class="d-flex mt-5">
-      <p class="heading"></p>
+     <v-title class="mb-3">
+        <h3 class="heading">Political Risk Assessment Sheets</h3>
+      </v-title>
       <v-spacer></v-spacer>
       <v-btn id="img" class="white--text add-assessment-btn" color="#1ebbd9"
         ><v-icon>mdi-plus-box-outline</v-icon>
@@ -39,9 +43,34 @@
         :items="items"
         :headers="headers"
       >
-        <template v-slot:[`item.action`]="{ item }">
-          <v-icon small class="black--text">mdi-dots-vertical</v-icon
-          >{{ item.text }}
+       <template v-slot:[`item.action`]="{}">
+          <v-menu offset-y>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon flat slot="activator" v-bind="attrs" v-on="on" left
+                >mdi-dots-vertical</v-icon
+              >
+            </template>
+            <v-list  v-for="link in links"
+                :key="link.text"
+              style="border:1px solid #C1C8CC;" >
+              <v-list-item
+                style="min-height: 20px; width:130px;"
+              >
+                <template
+                  v-if="link.text === 'MODIFY'" 
+                >
+                  <v-icon class="pr-3">mdi-{{ link.icon }}</v-icon>
+                  <v-list-item-title class="teal--text">{{
+                    link.text
+                  }}</v-list-item-title>
+                </template>
+                <template v-else>
+                  <v-icon class="pr-3">mdi-{{ link.icon }}</v-icon>
+                  <v-list-item-title>{{ link.text }}</v-list-item-title>
+                </template>
+              </v-list-item>
+            </v-list>
+          </v-menu>
         </template>
       </v-data-table>
     </div>
@@ -181,12 +210,16 @@ export default {
           width: 200,
         },
       ],
+     links: [
+        { icon: "eye", text: "VIEW" },
+        { icon: "pencil-outline", text: "MODIFY" },
+      ],
     };
   },
 };
 </script>
 
-<style>
+<style scoped>
 #table.v-data-table.tbody.td {
   border: 1px solid #b5c1c4;
 }

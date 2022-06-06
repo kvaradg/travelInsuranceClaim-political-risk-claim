@@ -22,7 +22,7 @@
           ><b>Assessment Sheet</b></v-btn
         ></router-link
       >
-      <v-divider class="mr-16"></v-divider>
+      <v-divider></v-divider>
     </div>
     <!-- ----------------------POLITICAL RISK CLAIM --------------------------->
     <template>
@@ -122,8 +122,12 @@
           </div>
           <v-spacer></v-spacer>
           <div @click="toggle2 = !toggle2">
-            <v-icon v-show="!toggle2" class="white--text">mdi-minus-box</v-icon>
-            <v-icon v-show="toggle2" class="white--text">mdi-plus-box</v-icon>
+            <v-icon v-show="!toggle2" class="heading-item-two" color="#ffffff"
+              >mdi-minus-box</v-icon
+            >
+            <v-icon v-show="toggle2" class="heading-item-two" color="#ffffff"
+              >mdi-plus-box</v-icon
+            >
           </div>
         </div>
 
@@ -451,7 +455,7 @@
             ><v-divider vertical class="red mx-2"></v-divider>Reset</v-btn
           >
 
-          <v-btn class="red--text btn" flat 
+          <v-btn class="red--text btn" flat
             ><v-icon>mdi-backspace-outline</v-icon
             ><v-divider vertical class="red mx-2"></v-divider>Cancel</v-btn
           >
@@ -475,8 +479,8 @@ export default {
   components: {},
   data() {
     return {
-      toggle1: false,
-      toggle2: false,
+      toggle1: true,
+      toggle2: true,
       menu: false,
     };
   },
