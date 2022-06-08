@@ -1,55 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-* {
-  letter-spacing: 0px;
-  text-transform: none !important;
-}
-:root {
-  --header-background: #f7f7f7;
-  --heading-text-color: #10242b;
-  --expansion-panel-background: #1ebbd9;
-  --expansion-panel-text: #ffffff;
-  --input-label: #4c4c4c;
-  --btn-color: #d1121b;
-}
 
+:root {
+  /* Colors: */
+  ---e46a25: #e46a25;
+  --unnamed-color-8a8a8a: #8a8a8a;
+  --unnamed-color-c1c8cc: #c1c8cc;
+  --unnamed-color-ededed: #ededed;
+  ---23b1a9: #23b1a9;
+  ---1a0dab: #1a0dab;
+  ---b9b9b9: #b9b9b9;
+  ---10242b: #10242b;
+  ---4c4c4c: #4c4c4c;
+  ---d1121b: #d1121b;
+  ---f7f7f7: #f7f7f7;
+  ---ffffff: #ffffff;
+  ---1ebbd9: #1ebbd9;
+}
 /* ---------------------HEADER CSS--------------------- */
 .header {
-  background-color: var(--header-background);
+  background-color: var(---f7f7f7);
 }
-.claim-no {
-  color: var(--heading-text-color);
+.claim-no-label {
+  color: var(---10242b);
   font-size: 16px;
 }
-.claim {
-  color: #d1121b;
+.claim-label {
+  color: var(---d1121b);
   font-size: 16px;
 }
-.view-details {
-  color: #23b1a9;
+.view-details-label {
+  color: var(---23b1a9);
   font-size: 12px;
 }
 
 /* ----------------------TABS CSS------------------------- */
 #tab-one {
-  color: #ffffff;
-  background-color: #1ebbd9;
+  color: var(---ffffff);
+  background-color: var(---1ebbd9);
   border: 1px solid #b5c1c4;
   font-size: 16px;
   height: 45px;
   width: 149px;
 }
 #tab-two {
-  color: #111;
+  color: var(---10242b);
   font-size: 16px;
   border: 1px solid #b5c1c4;
   height: 45px;
   width: 149px;
-  background-color: #ffffff;
+  background-color: var(---ffffff);
 }
 
 /* ------------------HEADING CSS-------------------- */
 .heading {
-  color: var(--heading-text-color);
+  color: var(---10242b);
   size: 18px;
   height: 22px;
 }
@@ -62,23 +66,23 @@
 .expansion-panel-header {
   display: flex;
   align-items: center;
-  background-color: var(--expansion-panel-background);
-  color: var(--expansion-panel-text);
+  background-color: var(---1ebbd9);
+  color: var(---ffffff);
   height: 36px;
   padding: 20px;
 }
-.heading-item-one {
-  color: #ffffff;
+.heading-item {
+  color: var(---ffffff);
   font-size: 14px;
 }
-.heading-item-two {
+.toggle-btn {
   height: 18px;
   width: 18px;
 }
 
 /* ---------------------INPUT-LABEL-------------- */
 .textfield-main {
-  color: var(--input-label);
+  color: var(---4c4c4c);
   font-size: 13px;
   height: 13px;
   width: 117px;
@@ -89,25 +93,25 @@
 .form-group {
   width: 200px;
 }
-.mandatory {
+.required {
   margin-left: 3px;
-  color: #d1121b;
+  color: var(---d1121b);
 }
 
 /* --------------------BUTTONS-CSS------------------------ */
 .btn {
-  color: var(--btn-color);
+  color: var(---d1121b);
   box-shadow: 0px 2px 2px #d1121b3d;
   border: 1px solid #d1121b;
   border-radius: 4px;
 }
 .submit-btn {
-  color: #23b1a9;
+  color: var(---23b1a9);
   box-shadow: 0px 3px 4px #23b1a93d;
   border-radius: 4px;
 }
 .add-assessment-btn {
-  color: #1ebbd9;
+  color: var(---1ebbd9);
   box-shadow: 0px 3px 4px #1ebbd93d;
   border-radius: 4px;
   margin-bottom: 5px;

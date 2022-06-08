@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <NavBar/>
     <v-main class="mx-7">
       <router-view></router-view>
@@ -16,6 +16,9 @@ export default {
 };
 </script>
 <style>
-
+*{
+   letter-spacing: 0px;
+  text-transform: none !important;
+}
 
 </style>

@@ -8,13 +8,13 @@
       <!-- -------------------BASIC DETAILS-------------------------------- -->
       <div class="expansion-panel-container">
         <div class="expansion-panel-header">
-          <div class="heading-item-one"><b>Basic Details</b></div>
+          <div class="heading-item"><b>Basic Details</b></div>
           <v-spacer></v-spacer>
           <div @click="toggle1 = !toggle1">
-            <v-icon v-show="!toggle1" class="heading-item-two" color="#ffffff"
+            <v-icon v-show="!toggle1" class="toggle-btn" color="#ffffff"
               >mdi-minus-box</v-icon
             >
-            <v-icon v-show="toggle1" class="heading-item-two" color="#ffffff"
+            <v-icon v-show="toggle1" class="toggle-btn" color="#ffffff"
               >mdi-plus-box</v-icon
             >
           </div>
@@ -26,7 +26,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Settlement Type</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-select
                   class="input"
@@ -40,7 +40,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Claim Payment Type</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-select
                   class="input"
@@ -53,7 +53,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Transaction Type</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-select
                   class="input"
@@ -66,7 +66,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Country Name</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-select
                   class="input"
@@ -79,7 +79,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Currency Name </b
-                  ><span class="mandatory">*</span></label
+                  ><span class="required">*</span></label
                 >
                 <v-select
                   class="input"
@@ -101,7 +101,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Rate Of Exchange</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-text-field
                   class="input"
@@ -116,7 +116,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label"
                   ><b class="textfield-main">Rate Of Exchange Date</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-menu
                   ref="menu"
@@ -159,7 +159,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">ROE Updated Manually</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-select
                   class="input"
@@ -179,13 +179,13 @@
     <template>
       <div class="expansion-panel-container">
         <div class="expansion-panel-header">
-          <div class="heading-item-one"><b>Amount Details</b></div>
+          <div class="heading-item"><b>Amount Details</b></div>
           <v-spacer></v-spacer>
           <div @click="toggle2 = !toggle2">
-            <v-icon v-show="!toggle2" class="heading-item-two" color="#ffffff"
+            <v-icon v-show="!toggle2" class="toggle-btn" color="#ffffff"
               >mdi-minus-box</v-icon
             >
-            <v-icon v-show="toggle2" class="heading-item-two" color="#ffffff"
+            <v-icon v-show="toggle2" class="toggle-btn" color="#ffffff"
               >mdi-plus-box</v-icon
             >
           </div>
@@ -266,13 +266,13 @@
     <template>
       <div class="expansion-panel-container">
         <div class="expansion-panel-header">
-          <div class="heading-item-one"><b>Non-Payable Expenses</b></div>
+          <div class="heading-item"><b>Non-Payable Expenses</b></div>
           <v-spacer></v-spacer>
           <div @click="toggle3 = !toggle3">
-            <v-icon v-show="!toggle3" class="heading-item-two" color="#ffffff"
+            <v-icon v-show="!toggle3" class="toggle-btn" color="#ffffff"
               >mdi-minus-box</v-icon
             >
-            <v-icon v-show="toggle3" class="heading-item-two" color="#ffffff"
+            <v-icon v-show="toggle3" class="toggle-btn" color="#ffffff"
               >mdi-plus-box</v-icon
             >
           </div>

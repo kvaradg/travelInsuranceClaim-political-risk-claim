@@ -2,13 +2,13 @@
   <div>
     <div class="mt-3">
       <div class="d-flex lighten-3 header">
-        <p class="align-center font-weight-bold mt-3 mx-5 claim-no">
+        <p class="align-center font-weight-bold mt-3 mx-5 claim-no-label">
           Claim Number - 4340002739
         </p>
         <v-divider vertical class="my-2"></v-divider>
-        <p class="font-weight-bold mt-3 mx-5 claim">NEW CLAIM</p>
+        <p class="font-weight-bold mt-3 mx-5 claim-label">NEW CLAIM</p>
         <v-spacer></v-spacer>
-        <p class="mt-3 mr-5 view-details"><b>VIEW DETAILS</b></p>
+        <p class="mt-3 mr-5 view-details-label"><b>VIEW DETAILS</b></p>
       </div>
     </div>
     <div class="mt-3">
@@ -18,13 +18,12 @@
         >
       </router-link>
 
-      
       <v-btn class="pa-5" id="tab-two" elevation="0">Assessment Sheet</v-btn>
       <v-divider></v-divider>
     </div>
 
     <div class="d-flex mt-5">
-     <v-title class="mb-3">
+      <v-title class="mb-3">
         <h3 class="heading">Political Risk Assessment Sheets</h3>
       </v-title>
       <v-spacer></v-spacer>
@@ -43,22 +42,20 @@
         :items="items"
         :headers="headers"
       >
-       <template v-slot:[`item.action`]="{}">
+        <template v-slot:[`item.action`]="{}">
           <v-menu offset-y>
             <template v-slot:activator="{ on, attrs }">
               <v-icon flat slot="activator" v-bind="attrs" v-on="on" left
                 >mdi-dots-vertical</v-icon
               >
             </template>
-            <v-list  v-for="link in links"
-                :key="link.text"
-              style="border:1px solid #C1C8CC;" >
-              <v-list-item
-                style="min-height: 20px; width:130px;"
-              >
-                <template
-                  v-if="link.text === 'MODIFY'" 
-                >
+            <v-list
+              v-for="link in links"
+              :key="link.text"
+              style="border: 1px solid #c1c8cc"
+            >
+              <v-list-item style="min-height: 20px; width: 130px">
+                <template v-if="link.text === 'MODIFY'">
                   <v-icon class="pr-3">mdi-{{ link.icon }}</v-icon>
                   <v-list-item-title class="teal--text">{{
                     link.text
@@ -210,7 +207,7 @@ export default {
           width: 200,
         },
       ],
-     links: [
+      links: [
         { icon: "eye", text: "VIEW" },
         { icon: "pencil-outline", text: "MODIFY" },
       ],

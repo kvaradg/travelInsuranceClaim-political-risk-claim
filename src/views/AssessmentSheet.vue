@@ -2,13 +2,13 @@
   <div>
     <div class="mt-3">
       <div class="d-flex header">
-        <p class="align-center font-weight-bold mt-3 mx-5 claim-no">
+        <p class="align-center font-weight-bold mt-3 mx-5 claim-no-label">
           Claim Number - 4340002739
         </p>
         <v-divider vertical class="my-2"></v-divider>
-        <p class="font-weight-bold mt-3 mx-5 claim">FEATURE CLAIM</p>
+        <p class="font-weight-bold mt-3 mx-5 claim-label">FEATURE CLAIM</p>
         <v-spacer></v-spacer>
-        <p class="text-caption mt-3 mr-5 view-details"><b>VIEW DETAILS</b></p>
+        <p class="text-caption mt-3 mr-5 view-details-label"><b>VIEW DETAILS</b></p>
       </div>
       <div class="mt-3">
         <router-link to="/">

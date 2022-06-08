@@ -2,13 +2,13 @@
   <v-app>
     <div class="mt-3">
       <div class="d-flex lighten-3 header">
-        <p class="align-center font-weight-bold mt-3 mx-5 claim-no">
+        <p class="align-center font-weight-bold mt-3 mx-5 claim-no-label">
           Claim Number - 4340002739
         </p>
         <v-divider vertical class="my-2"></v-divider>
-        <p class="font-weight-bold mt-3 mx-5 claim">NEW CLAIM</p>
+        <p class="font-weight-bold mt-3 mx-5 claim-label">NEW CLAIM</p>
         <v-spacer></v-spacer>
-        <p class="text-caption mt-3 mr-5 view-details">
+        <p class="text-caption mt-3 mr-5 view-details-label">
           <b>VIEW DETAILS</b>
         </p>
       </div>
@@ -32,15 +32,15 @@
       <!-- -------------------BASIC DETAILS-------------------------------- -->
       <div class="expansion-panel-container">
         <div class="expansion-panel-header">
-          <div class="heading-item-one">
+          <div class="heading-item">
             <b>Basic Details</b>
           </div>
           <v-spacer></v-spacer>
           <div @click="toggle1 = !toggle1">
-            <v-icon v-show="!toggle1" class="heading-item-two" color="#ffffff"
+            <v-icon v-show="!toggle1" class="toggle-btn" color="#ffffff"
               >mdi-minus-box</v-icon
             >
-            <v-icon v-show="toggle1" class="heading-item-two" color="#ffffff"
+            <v-icon v-show="toggle1" class="toggle-btn" color="#ffffff"
               >mdi-plus-box</v-icon
             >
           </div>
@@ -55,7 +55,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Country Evacuated From</b>
-                  <span class="mandatory">*</span>
+                  <span class="required">*</span>
                 </label>
                 <v-text-field
                   class="input"
@@ -71,7 +71,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Country Evacuated To</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-text-field
                   class="input"
@@ -85,7 +85,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Reason For Evacuation</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-select
                   class="input"
@@ -118,14 +118,14 @@
       <div class="expansion-panel-container">
         <div class="expansion-panel-header">
           <div style="color: #ffffff; font-size: 14px">
-            <b class="heading-item-one">Accident Details</b>
+            <b class="heading-item">Accident Details</b>
           </div>
           <v-spacer></v-spacer>
           <div @click="toggle2 = !toggle2">
-            <v-icon v-show="!toggle2" class="heading-item-two" color="#ffffff"
+            <v-icon v-show="!toggle2" class="toggle-btn" color="#ffffff"
               >mdi-minus-box</v-icon
             >
-            <v-icon v-show="toggle2" class="heading-item-two" color="#ffffff"
+            <v-icon v-show="toggle2" class="toggle-btn" color="#ffffff"
               >mdi-plus-box</v-icon
             >
           </div>
@@ -138,7 +138,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Nature Of Accident</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-select
                   class="input"
@@ -152,7 +152,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Others</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-text-field
                   class="input"
@@ -165,7 +165,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label"
                   ><b class="textfield-main">FIR Registered</b
-                  ><span class="mandatory">*</span></label
+                  ><span class="required">*</span></label
                 >
                 <v-card
                   class="radio-btn-card"
@@ -200,7 +200,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label"
                   ><b class="textfield-main">FIR/GD Number</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-text-field
                   class="input"
@@ -216,7 +216,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label"
                   ><b class="textfield-main">FIR Date</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-menu
                   ref="menu"
@@ -259,7 +259,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Police Station Name</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-text-field
                   class="input"
@@ -403,7 +403,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">MLC</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-text-field
                   class="input"
@@ -416,7 +416,7 @@
               <v-flex class="form-group mx-2">
                 <label class="form-label">
                   <b class="textfield-main">MLC Number</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-text-field
                   class="input"
@@ -429,7 +429,7 @@
               <v-flex class="form-group lg-input mx-2">
                 <label class="form-label">
                   <b class="textfield-main">Accident Description</b
-                  ><span class="mandatory">*</span>
+                  ><span class="required">*</span>
                 </label>
                 <v-text-field
                   class="input"
@@ -513,9 +513,5 @@ export default {
   height: 40px;
   width: 40px;
   margin-left: -12px;
-}
-.date-label {
-  font-size: 13px;
-  color: #4c4c4c;
 }
 </style>
